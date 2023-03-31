@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
+
+caption {
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid black;
+}
+
+thead th {
+  width: 25%;
+}
+
+.cell-result {
+  background-color: greenyellow;
+  font-weight: bold;
+}

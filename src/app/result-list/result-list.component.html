@@ -1,0 +1,20 @@
+<div [hidden]="results.length == 0">
+  <table>
+    <caption>
+      <h2>Results:</h2>
+    </caption>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>N's Value</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let result of results; index as i">
+      <td class="id">{{ i + 1 }}</td>
+      <td>{{ result.n }}</td>
+      <td class="cell-result">{{ result.result }}</td>
+    </tr>
+  </table>
+  <button (click)="clear()">Clear</button>
+</div>

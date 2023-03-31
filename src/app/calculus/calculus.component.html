@@ -1,0 +1,10 @@
+<div>
+  <label for="n-value">Value of <i>n</i>: </label>
+  <input
+    id="n-value"
+    (keypress)="numberOnly($event)"
+    #nValue
+    placeholder="value of n"
+  />
+  <button (click)="calc(nValue.value)">Calc</button>
+</div>
